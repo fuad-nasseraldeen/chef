@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>JCE Registration Site</title>	
+	</head>
+
+	<body>
+		<h2>In order to delete your account please provide the answer to the following security question:</h2>
+		<form action="/remove/" method="POST" id="delete_form">
+			<h3>
+				<p> 
+					<%= hint %>
+				</p>
+				<p>
+					Answer: 
+					<input required type="text" name="hint_answer">
+				</p>
+				<p>
+					<input type="submit">
+				</p>
+			</h3>
+		</form>
+	</body>
+
+</html>

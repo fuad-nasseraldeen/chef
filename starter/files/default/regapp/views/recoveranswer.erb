@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>JCE Registration Site</title>	
+	</head>
+
+	<body>
+		<h2>In order to recover your account please provide the answer to the following security question:</h2>
+		<form action="/recover/" method="POST" id="recovery_answer">
+			<h3>
+				<p> 
+					<%= hint %>
+				</p>
+				<p>
+					Answer: 
+					<input required type="text" name="hint_answer">
+					<input type="hidden" name="email" value="<%= email %>">
+				</p>
+				<p>
+					<input type="submit">
+				</p>
+			</h3>
+		</form>
+	</body>
+
+</html>

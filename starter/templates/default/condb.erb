@@ -1,0 +1,8 @@
+require 'rubygems'
+require 'mysql'
+
+def connect_db
+ $dbcon = Mysql.new('<%=@sqlhost%>', '<%=@sqluser%>', '<%=@sqlpass%>', '<%=@dbname%>')
+end
+
+

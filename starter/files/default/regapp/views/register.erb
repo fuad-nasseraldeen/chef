@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>JCE Registration Site</title>	
+	</head>
+	<body>
+		<h2>Please fill in the following form</h3>
+		<form action="/register/" method="POST" id="registration_form">
+			<h3>
+				Student name: <input required type="text" name="student_name"><br />
+				Email address: <input required type="text" name="email_addr"><br />
+				Password: <input required type="text" name="passwd"><br />
+				Security Question:
+				<select name="security_question">
+					<%= hints %>
+				</select><br>
+				Security Answer: <input required type="text" name="security_answ">
+			</h3>
+			<input type="submit">
+		</form> 
+		Back to <a href="/start">Index</a>
+	</body>
+</html>

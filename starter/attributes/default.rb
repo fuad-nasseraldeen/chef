@@ -1,0 +1,9 @@
+default[:regapp][:user] = "ubuntu"
+default[:regapp][:group] = "ubuntu"
+default[:regapp][:app_dir] = "home/ubuntu/regapp/"
+default[:regapp][:data_dir] = "home/ubuntu/data/"
+default[:regapp][:password] = "admin1"
+default[:regapp][:db_ip] = "35.166.101.156"
+default[:regapp][:db_user] = "root"
+default[:regapp][:db_table] = "students"
+default[:regapp][:sinatra_port] = 4567

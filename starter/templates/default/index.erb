@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html> <head>
+  <title><%= node.name %></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style>body {font: normal 16px Helvetica; margin: 4em;}</style>
+</head>
+<body>
+  <h2>
+    Greetings from <%= node[:platform].capitalize %> <%= node[:platform_version] %>     at <%= node[:ipaddress] %> !
+    <br>
+        Hello <%= @text %>
+  </h2>
+</body> </html>

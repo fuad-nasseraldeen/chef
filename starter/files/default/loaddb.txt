@@ -1,0 +1,15 @@
+create database if not exists students;
+use students;
+create table if not exists users (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(40) NOT NULL, email VARCHAR(60) NOT NULL, passwd VARCHAR(12) NOT NULL, hintID INT(2) NOT NULL, hintAnswer VARCHAR(20) NOT NULL );
+insert into users (name, email, passwd, hintID, hintAnswer) values ('Alon Balon','alon@baloon.com','123456',7,'red');
+insert into users (name, email, passwd, hintID, hintAnswer) values ('Benny Boom','benny@boom.com','234567',3,'Food St');
+insert into users (name, email, passwd, hintID, hintAnswer) values ('Dana Nama','dana@kama.com','234567',2,'Pillow');
+insert into users (name, email, passwd, hintID, hintAnswer) values ('David Ben','david@bengur.yon','israel',5,'polla');
+create table if not exists hints(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, hint VARCHAR(50) NOT NULL);
+insert into hints (hint) values ('Your mothers maiden name');
+insert into hints (hint) values ('Name of your first pet');
+insert into hints (hint) values ('City in which you were born');
+insert into hints (hint) values ('Name of street where you shop for food');
+insert into hints (hint) values ('First boyfriend/girlfriend');
+insert into hints (hint) values ('Your favorite movie');
+insert into hints (hint) values ('Your favorite color');
